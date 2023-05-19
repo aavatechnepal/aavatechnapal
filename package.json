@@ -1,6 +1,9 @@
 {
   "name": "aavatechnepal",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=14.20.1"
+  },
   "description": "aavatechnepal",
   "main": "index.js",
   "scripts": {
