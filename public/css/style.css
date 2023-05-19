@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:wght@200;300;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Bebas Neue', cursive; */
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+:root{
+    --dark-blue : #4874AE;
+    --light-blue : #45BAD7;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+/* .aavalogo{
+    width: 34px;
+    height: 34px;
+} */
+
+.container{
+    max-width: 1480px;
+    margin-inline : auto;
+    padding-inline: 10px;
+    overflow: hidden;
+}
+
+.main-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative; 
+    padding: 12px;
+}
+
+.navlinks{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.navlinks li{
+    list-style: none;
+}
+.navlinks li a{
+    text-decoration: none;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+.navlinks li a:hover{
+    transition: all 0.3s ease-in-out;
+    color: var(--light-blue);
+}
+.nav-toggle{
+    display: none;
+}
+
+.btn{
+    border-radius: 6px;
+    border: none;
+    color: white !important;   
+    padding: 15px 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.primary-btn{
+    background-color: var(--dark-blue);
+    transition: 0.5 all ease-in-out;
+}
+.primary-btn:hover{
+    background-color: var(--light-blue);
+}
+.secondary-btn{
+    color:var(--dark-blue) !important;   
+    background: transparent;
+    border: 2px solid var(--light-blue);
+}
+
+/* header section */
+
+header{
+    /* padding: 50px;
+    padding-inline: 20px; */
+    background-image: url('../images/background1.jpeg');
+    /* width: 100%;
+    height: 100%; */
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-left{
+    /* max-width: 40vw; */
+}
+
+
+.header-left h2{
+    margin-top: 20px;
+    font-size: 4rem;
+}
+.header-left span{
+    margin-top: 20px;
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+.header-left p{
+    margin-top: 20px;
+    color: #6F6B80;
+    font-weight: 700;
+}
+
+.get-started-btn{
+    margin-top: 20px;
+}
+.header-right img{
+    /* width: 100%; */
+}
+
+/* services section */
+
+
+
+/* .services-section{
+    display: flex;
+
+} */
+
+.services-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+   
+}
+.services-section:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.service-heading{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.card img{
+    margin: auto;
+    display: block;
+    width: 300px;
+    height: 189px;    
+    /* border-top-right-radius: 99px; */
+    border-radius: 8px; 
+    
+}
+.card{
+    transition: 1s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card h3{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+.card p{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+
+.card1, .card2, .card3, .card4{
+    /* height: 24rem;
+    width: 23vw; */
+    width: 300px;
+    height: 24rem;  
+    background-color:var(--dark-blue);
+    /* border-top-right-radius: 99px; */
+    border-radius: 8px;
+}
+
+
+
+/* about section */
+
+.aboutbackground{
+    background-image: url(../images/background1.jpeg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.about-section{
+    gap: 9rem;
+    margin-top: 10rem;
+    align-items: center;
+}
+.about-btn{
+    margin-top: 25px;
+}
+
+.insdeAbout{
+   /* line-height: 23px; */
+   margin-top: 2rem;
+   gap: 2rem;
+}
+
+.left-section{
+    display: flex;
+}
+/* for animation  */
+.left-section .updownanimation{
+    width: 188px;
+    height: 242px;
+    position: relative;
+    right: 44px;
+  top: 34px;
+}
+
+img.updownanimation {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.updownanimation{
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+/* for end animation  */
+
+
+
+
+
+
+.right-section h1{
+    font-size: 2.5rem;
+    color: #231f40;
+}
+.right-section h3{
+    color: #231f40;
+}
+.right-section span{
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+.right-section p{
+    color: #8e93a5;
+}
+
+
+
+/* course section */
+
+.courseheading{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: -132px;
+}
+.courseheading h2{
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.courseheading p{
+   color: var(--dark-blue);
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.courses-section{
+    display: flex;
+    align-items: center;
+    /* gap: 3rem; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10rem;
+    
+}
+
+.courseCard{
+    background-color: #f5f5f5;
+    width: 370px;
+    height: 528px;
+    border-radius: 5px;    
+    transition: 0.5s;
+    margin-top: 34px;
+}
+.courseCard:hover{
+    background-color: #ffff;
+    box-shadow: 5px 5px 20px 2px black;
+    
+}
+.courseCard img:hover{
+    transform: scale(1.1);
+    background-color: white;
+   
+}
+.courseCard .course-img{
+    transition: 1s ease-in-out;
+    width: 330px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 9px;
+    margin: 20px 20px;
+    /* display: block; */
+    /* margin: auto; */
+ 
+   
+}
+.courseCard h4{
+    text-align: center;
+    margin-left: 1rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #231f40; 
+}
+.courseCard h4:hover{
+    transition: 1s;
+    color: var(--dark-blue);
+}
+.userrating{
+    display: flex;
+    align-items: center; 
+    /* gap: 3rem; */
+    justify-content: space-around;
+
+}
+.teacherimg{
+    border-radius: 100%;
+    width: 34px;
+    height: 34px;
+}
+.userimg{
+    display: flex;
+    align-items: center; 
+    gap: 4px;
+}
+
+.rating i{
+    /* color:var(--dark-blue); */
+    color: orange;
+}
+.rating p{
+    color: #6F6B80;
+}
+
+.students_lesson{
+    display: flex;
+    /* gap: 3rem; */
+    justify-content: space-around;
+    align-items: center;
+    color: #6F6B80;
+}
+
+
+.stds, .lesson{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.prize-sec{
+    margin-top: 30px;
+}
+.prize-btn{
+    margin:20px 50px;
+    padding: 15px 50px;
+}
+
+.second-course-sec{
+    margin-top: 30px;
+}
+
+.viewallcourses{
+    text-align: center;
+    margin-top: 60px;
+
+}
+.viewallcoursesbtn{
+    padding: 20px 60px;
+}
+
+/* team section  */
+
+.team-section{
+    margin-top: 40px;
+    background-image: url('../images/asset\ 66.jpeg');
+    
+ 
+}
+.team-heading{
+    text-align: center;
+    margin-top: 20px;
+}
+.team-heading{
+    color: white;
+    padding-top: 50px;    
+}
+
+.main{ 
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-card{
+    position: relative;
+    font-family: sans-serif;
+    width: 220px;
+    height: 220px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+    margin: 0 25px;
+  }
+  .profile-card:hover{
+    border-radius: 10px;
+    height: 260px;
+  }
+  .profile-card .img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+    z-index: 99;
+  }
+  .profile-card:hover .img{
+    transform: translateY(-60px);
+  }
+  .img img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+  }
+  .profile-card:hover img{
+    border-radius: 10px;
+  }
+  .caption{
+    text-align: center;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: .6s;
+  }
+  .profile-card:hover .caption{
+    opacity: 1;
+  }
+  .caption h3{
+    font-size: 21px;
+    font-family: sans-serif;
+  }
+  .caption p{
+    font-size: 15px;
+    color: #0c52a1;
+    font-family: sans-serif;
+    margin: 2px 0 9px 0;
+  }
+  .caption .social-links a{
+    color: #333;
+    margin-right: 15px;
+    font-size: 21px;
+    transition: .6s;
+  }
+  .social-links a:hover{
+    color: #0c52a1;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.testing{
+    height: 343px;
+
+}

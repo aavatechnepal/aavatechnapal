@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+      <!-- custom css link -->
+      <link rel="stylesheet" href="/css/style.css">
+      <!-- media queries link -->
+      <link rel="stylesheet" href="/css/media-Queries.css">
+      <!-- fontawecome cdn link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <!-- animation link -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!-- register style link -->
+      <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+
+    <%-include("../partials/navbar.ejs")%>
+
+    <form action="/signup" method="post">
+        <h3>Register Now</h3>
+        <label for="name">Enter Your Name  </label>
+         <input type="text" name="name" id="name">
+         <label for="email">Enter Your Email  </label>
+         <input type="email" name="email" id="email">
+         <label for="Password">Enter Your Password  </label>
+         <input type="password" name="password" id="password">
+         
+         <label for="Password">Enter Your Confirm Password </label>
+         <input type="password" name="confPassword" id="confPassword">
+
+         <label for="Password">Enter Your Phone No. </label>
+         <input type="number" name="phone" id="phone">
+
+         <label id="register">Register As</label>
+         Student<input type="radio" name="role" id="role">
+         Teacher<input type="radio" name="role" id="role">
+
+         <br>
+         <button id="signupbtn" type="submit">Register Now</button>
+
+         <div class="login">Already Have an Account ? <a href="/login">Login Here</a> </div>
+
+
+
+    </form>
+
+    <!-- <style>
+        form{
+            width: 400px;
+            font-family: sans-serif;
+            background-color: #f4f7f8;
+            margin: 10px auto;
+            padding: 20px 80px;
+            border-radius: 9px;
+        }
+        h3{
+            text-align: center;
+        }
+
+        label{
+            display: block;
+        }
+        #role{
+            
+        }
+        #register{
+            margin-bottom: 23px;
+        }
+
+        #name, #email, #password, #confPassword, #phone{
+            border: none;
+            background-color: #e8eeef;
+            color: #8a97a0;
+            font: 16px;
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 30px;
+
+        }
+
+        button{
+            width: 100%;
+            padding: 20px 40px;
+            background-color: green;
+            color: #ffff;
+            border: none;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 18px;
+        }
+
+        button:hover{
+            background-color: black;
+        }
+        .login{
+            text-align: center;
+            margin-top: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+            font-weight: 700;
+            margin-left: 5px;
+
+        }
+
+
+    </style> -->
+
+
+
+
+
+
+
+
+    <!-- for navbar -->
+    <script>
+        const toggleBtn = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleBtn.addEventListener('click', ()=>{
+            navLinks.classList.toggle('active')
+
+        })
+
+    </script>
+
+    
+</body>
+</html>

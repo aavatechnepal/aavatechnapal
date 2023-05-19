@@ -1,0 +1,66 @@
+:root{
+    --dark-blue : #4874AE;
+    --light-blue : #45BAD7;
+}
+
+form{
+    width: 600px;
+    font-family: sans-serif;
+    background-color: #f4f7f8;
+    margin: 20px auto;
+    padding: 20px 80px;
+    border-radius: 9px;
+}
+h3{
+    text-align: center;
+}
+
+label{
+    display: block;
+}
+#role{
+    
+}
+#register{
+    margin-bottom: 23px;
+}
+
+#name, #email, #password, #confPassword, #phone{
+    border: none;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    font: 16px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    outline: none;
+
+}
+
+#signupbtn{
+    width: 100%;
+    padding: 20px 40px;
+    background-color: var(--dark-blue);
+    color: #ffff;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 18px;
+}
+
+#signupbtn:hover{
+    background-color: var(--light-blue);
+}
+.login{
+    text-align: center;
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+    color:var(--light-blue);
+    font-weight: 700;
+    margin-left: 5px;
+
+}
+
+

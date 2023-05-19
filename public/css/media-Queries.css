@@ -1,0 +1,114 @@
+@media screen and (max-width:1400px) {
+    .header-left h2{
+        margin-top: 20px;
+        font-size: 3rem;
+    }
+    .header-left{
+        margin-left: 115px;
+    }
+
+}
+
+@media screen and (max-width:1300px) {
+    .about-section{
+        gap: 2rem;
+        margin-top: 20rem;
+        align-items: center;
+    }
+    .right-section h1{
+        font-size: 2rem;
+        color: #231f40;
+    }
+    .services-section{
+        margin-bottom: -263px;
+    }
+    .header-left h2{
+        margin-top: 20px;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1120px){
+    .about-section{
+        flex-wrap: wrap;
+    }
+    .main{
+        flex-wrap: wrap;
+    }
+  
+  
+}
+@media screen and (max-width: 1020px){
+    .header-section{
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+    }
+    .header-right img{
+        width: 69%;
+    }
+    .header-left{
+        max-width: 100vw;
+        margin-top: 28px;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:991px) {
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .navlinks{
+        position: absolute;
+        flex-direction: column;     
+        background: white;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-bottom: 40px;
+        padding-top: 20px;
+        transition: 0.3s ease-in-out;
+        z-index: 1;
+    }
+    .navlinks.active{
+        left: 0;
+
+    }
+
+    .main-navbar{
+        overflow: initial;
+       
+       
+    }
+   
+    .courseheading{
+        margin-bottom: -170px;
+    }
+    
+}
+
+@media screen and (max-width: 680px){
+    .updownanimation{
+        display: none;
+    }       
+    .main{
+        height: 960px;
+        margin-top: 50px;
+    }
+    .left-section img{
+        margin-top: 20px;
+        width: 322px;
+    }
+    .about-btn{
+        margin-bottom: 12px;
+    }
+    .header-left h2{
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+}
+
+

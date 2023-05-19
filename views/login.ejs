@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+      <!-- custom css link -->
+      <link rel="stylesheet" href="/css/style.css">
+      <!-- media queries link -->
+      <link rel="stylesheet" href="/css/media-Queries.css">
+      <!-- fontawecome cdn link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <!-- animation link -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!-- register style link -->
+      <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+
+    <%-include("../partials/navbar.ejs")%>
+
+    <form action="/login" method="post">
+        <h3>Login Now</h3>
+      
+         <label for="email">Enter Your Email  </label>
+         <input type="email" name="email" id="email">
+
+         <label for="Password">Enter Your Password  </label>
+         <input type="password" name="password" id="password">
+
+         <br>
+         <button id="signupbtn" type="submit">Login Now</button>
+
+         <div class="login">Create Account Here  <a href="/signup">Register Now</a> </div>
+
+
+
+    </form>
+
+
+
+
+    <!-- for navbar -->
+    <script>
+        const toggleBtn = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleBtn.addEventListener('click', ()=>{
+            navLinks.classList.toggle('active')
+
+        })
+
+    </script>
+
+    
+</body>
+</html>
